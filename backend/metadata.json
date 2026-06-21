@@ -1,0 +1,317 @@
+{
+  "feature_columns": [
+    "Engine HP",
+    "Engine Cylinders",
+    "Number of Doors",
+    "highway MPG",
+    "city mpg",
+    "Popularity",
+    "Car Age",
+    "HP_per_Cylinder",
+    "avg_mpg",
+    "is_luxury",
+    "is_performance",
+    "Make_encoded",
+    "Engine Fuel Type_electric",
+    "Engine Fuel Type_flex-fuel (premium unleaded recommended/E85)",
+    "Engine Fuel Type_flex-fuel (premium unleaded required/E85)",
+    "Engine Fuel Type_flex-fuel (unleaded/E85)",
+    "Engine Fuel Type_flex-fuel (unleaded/natural gas)",
+    "Engine Fuel Type_natural gas",
+    "Engine Fuel Type_premium unleaded (recommended)",
+    "Engine Fuel Type_premium unleaded (required)",
+    "Engine Fuel Type_regular unleaded",
+    "Transmission Type_AUTOMATIC",
+    "Transmission Type_DIRECT_DRIVE",
+    "Transmission Type_MANUAL",
+    "Transmission Type_UNKNOWN",
+    "Driven_Wheels_four wheel drive",
+    "Driven_Wheels_front wheel drive",
+    "Driven_Wheels_rear wheel drive",
+    "Vehicle Size_Large",
+    "Vehicle Size_Midsize",
+    "Vehicle Style_2dr SUV",
+    "Vehicle Style_4dr Hatchback",
+    "Vehicle Style_4dr SUV",
+    "Vehicle Style_Cargo Minivan",
+    "Vehicle Style_Cargo Van",
+    "Vehicle Style_Convertible",
+    "Vehicle Style_Convertible SUV",
+    "Vehicle Style_Coupe",
+    "Vehicle Style_Crew Cab Pickup",
+    "Vehicle Style_Extended Cab Pickup",
+    "Vehicle Style_Passenger Minivan",
+    "Vehicle Style_Passenger Van",
+    "Vehicle Style_Regular Cab Pickup",
+    "Vehicle Style_Sedan",
+    "Vehicle Style_Wagon"
+  ],
+  "ohe_cols": [
+    "Engine Fuel Type",
+    "Transmission Type",
+    "Driven_Wheels",
+    "Vehicle Size",
+    "Vehicle Style"
+  ],
+  "categorical_options": {
+    "Engine Fuel Type": [
+      "diesel",
+      "electric",
+      "flex-fuel (premium unleaded recommended/E85)",
+      "flex-fuel (premium unleaded required/E85)",
+      "flex-fuel (unleaded/E85)",
+      "flex-fuel (unleaded/natural gas)",
+      "natural gas",
+      "premium unleaded (recommended)",
+      "premium unleaded (required)",
+      "regular unleaded"
+    ],
+    "Transmission Type": [
+      "AUTOMATED_MANUAL",
+      "AUTOMATIC",
+      "DIRECT_DRIVE",
+      "MANUAL",
+      "UNKNOWN"
+    ],
+    "Driven_Wheels": [
+      "all wheel drive",
+      "four wheel drive",
+      "front wheel drive",
+      "rear wheel drive"
+    ],
+    "Vehicle Size": [
+      "Compact",
+      "Large",
+      "Midsize"
+    ],
+    "Vehicle Style": [
+      "2dr Hatchback",
+      "2dr SUV",
+      "4dr Hatchback",
+      "4dr SUV",
+      "Cargo Minivan",
+      "Cargo Van",
+      "Convertible",
+      "Convertible SUV",
+      "Coupe",
+      "Crew Cab Pickup",
+      "Extended Cab Pickup",
+      "Passenger Minivan",
+      "Passenger Van",
+      "Regular Cab Pickup",
+      "Sedan",
+      "Wagon"
+    ]
+  },
+  "make_options": [
+    "Acura",
+    "Alfa Romeo",
+    "Aston Martin",
+    "Audi",
+    "BMW",
+    "Bentley",
+    "Buick",
+    "Cadillac",
+    "Chevrolet",
+    "Chrysler",
+    "Dodge",
+    "FIAT",
+    "Ferrari",
+    "Ford",
+    "GMC",
+    "Genesis",
+    "HUMMER",
+    "Honda",
+    "Hyundai",
+    "Infiniti",
+    "Kia",
+    "Lamborghini",
+    "Land Rover",
+    "Lexus",
+    "Lincoln",
+    "Lotus",
+    "Maserati",
+    "Maybach",
+    "Mazda",
+    "McLaren",
+    "Mercedes-Benz",
+    "Mitsubishi",
+    "Nissan",
+    "Oldsmobile",
+    "Plymouth",
+    "Pontiac",
+    "Porsche",
+    "Rolls-Royce",
+    "Saab",
+    "Scion",
+    "Spyker",
+    "Subaru",
+    "Suzuki",
+    "Tesla",
+    "Toyota",
+    "Volkswagen",
+    "Volvo"
+  ],
+  "make_price_map": {
+    "Acura": 36262.5,
+    "Alfa Romeo": 63900.0,
+    "Aston Martin": 197850.0,
+    "Audi": 47000.0,
+    "BMW": 52450.0,
+    "Bentley": 231600.0,
+    "Buick": 31027.5,
+    "Cadillac": 51650.0,
+    "Chevrolet": 26885.0,
+    "Chrysler": 29185.0,
+    "Dodge": 24895.0,
+    "FIAT": 22535.0,
+    "Ferrari": 224585.0,
+    "Ford": 29300.0,
+    "GMC": 32760.0,
+    "Genesis": 43900.0,
+    "HUMMER": 36015.0,
+    "Honda": 26150.0,
+    "Hyundai": 23600.0,
+    "Infiniti": 43325.0,
+    "Kia": 24300.0,
+    "Lamborghini": 248000.0,
+    "Land Rover": 55300.0,
+    "Lexus": 42825.0,
+    "Lincoln": 42335.0,
+    "Lotus": 67550.0,
+    "Maserati": 104122.0,
+    "Maybach": 418950.0,
+    "Mazda": 22915.0,
+    "McLaren": 239400.0,
+    "Mercedes-Benz": 54500.0,
+    "Mitsubishi": 23107.5,
+    "Nissan": 29360.0,
+    "Oldsmobile": 2179.0,
+    "Plymouth": 2000.0,
+    "Pontiac": 22500.0,
+    "Porsche": 98300.0,
+    "Rolls-Royce": 319400.0,
+    "Saab": 34975.0,
+    "Scion": 19205.0,
+    "Spyker": 214990.0,
+    "Subaru": 25645.0,
+    "Suzuki": 17642.0,
+    "Tesla": 79700.0,
+    "Toyota": 30010.0,
+    "Volkswagen": 27820.0,
+    "Volvo": 37775.0
+  },
+  "global_median_price": 30660.0,
+  "cap_bounds": {
+    "Engine HP": {
+      "min": -24.5,
+      "max": 499.5
+    },
+    "city mpg": {
+      "min": 7.0,
+      "max": 31.0
+    },
+    "highway MPG": {
+      "min": 10.0,
+      "max": 42.0
+    }
+  },
+  "current_year": 2024,
+  "best_model_name": "Random Forest (tuned)",
+  "metrics": {
+    "MAE": 2956.0205037279557,
+    "RMSE": 5455.831097889554,
+    "R2": 0.9918139850998159
+  },
+  "all_models_comparison": [
+    {
+      "name": "Régression Linéaire",
+      "MAE": 10524.98813118169,
+      "RMSE": 19307.26015101655,
+      "R2": 0.8267490291233004
+    },
+    {
+      "name": "Ridge",
+      "MAE": 10504.742356157585,
+      "RMSE": 19268.336417562037,
+      "R2": 0.8268129147309333
+    },
+    {
+      "name": "Random Forest (tuned)",
+      "MAE": 3344.8567273236404,
+      "RMSE": 7102.143336905566,
+      "R2": 0.988264163050774
+    },
+    {
+      "name": "Gradient Boosting",
+      "MAE": 4504.528194443745,
+      "RMSE": 9607.479887453712,
+      "R2": 0.9824547562942025
+    },
+    {
+      "name": "XGBoost",
+      "MAE": 3688.7618042755785,
+      "RMSE": 7889.251751801117,
+      "R2": 0.9880623650351964
+    },
+    {
+      "name": "LightGBM",
+      "MAE": 3970.5520499944255,
+      "RMSE": 8555.089829219874,
+      "R2": 0.98542803848038
+    }
+  ],
+  "feature_importance": {
+    "Car Age": 0.5475824227658996,
+    "Engine HP": 0.16625830089781712,
+    "HP_per_Cylinder": 0.11847742524301574,
+    "Make_encoded": 0.059754167393617996,
+    "Engine Fuel Type_regular unleaded": 0.01844545100200119,
+    "is_performance": 0.017432985589956502,
+    "Engine Fuel Type_premium unleaded (required)": 0.013694977043732038,
+    "Engine Cylinders": 0.011938717114271061,
+    "is_luxury": 0.008257689267003428,
+    "city mpg": 0.007292381392635064,
+    "avg_mpg": 0.0068716111350922305,
+    "highway MPG": 0.004031665271345427,
+    "Transmission Type_MANUAL": 0.003486821253133709,
+    "Popularity": 0.003139103500807306,
+    "Transmission Type_AUTOMATIC": 0.0023582670471718995
+  },
+  "numeric_ranges": {
+    "Engine HP": {
+      "min": 55.0,
+      "max": 499.5,
+      "median": 239.0
+    },
+    "Engine Cylinders": {
+      "min": 0.0,
+      "max": 12.0,
+      "median": 6.0
+    },
+    "Number of Doors": {
+      "min": 2.0,
+      "max": 4.0,
+      "median": 4.0
+    },
+    "highway MPG": {
+      "min": 12.0,
+      "max": 42.0,
+      "median": 25.0
+    },
+    "city mpg": {
+      "min": 8.0,
+      "max": 31.0,
+      "median": 18.0
+    },
+    "Popularity": {
+      "min": 2.0,
+      "max": 5657.0,
+      "median": 1385.0
+    }
+  },
+  "year_range": {
+    "min": 1990,
+    "max": 2017
+  }
+}
